@@ -1,0 +1,9 @@
+services:
+    server:
+        container_name: mssql_db
+        environment:
+            - ACCEPT_EULA=Y
+            - MSSQL_SA_PASSWORD=Admin2025*
+        ports:
+            - 1433:1433
+        image: mcr.microsoft.com/mssql/server:2022-latest
